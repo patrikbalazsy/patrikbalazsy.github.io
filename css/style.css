@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 10px;
+    background-color: #fcf8f8;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+#introduction {
+    text-align: center;
+    padding: 100px 10px;
+}
+    
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .btn:hover {
+        background-color: #fff1b3;
+    }

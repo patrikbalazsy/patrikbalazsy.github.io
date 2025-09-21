@@ -22,7 +22,7 @@ nav a {
     padding: 100px 10px;
 }
     
- .btn {
+.btn {
         display: inline-block;
         padding: 10px 20px;
         background-color: #007BFF;
@@ -32,12 +32,11 @@ nav a {
         margin-top: 20px; 
     }
 
-    .btn:hover {
+.btn:hover {
         background-color: #fff1b3;
-    }
+}
 
-/* Change to make image smaller TODO */
 .profile-img {
    height: 200px;
-   width: 50%;
+   width: 300%;
 }

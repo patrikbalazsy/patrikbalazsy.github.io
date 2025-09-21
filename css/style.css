@@ -22,16 +22,24 @@ nav a {
     padding: 100px 10px;
 }
     
-    .btn {
+ .btn {
         display: inline-block;
         padding: 10px 20px;
         background-color: #007BFF;
         color: white;
         text-decoration: none;
         border-radius: 5px;
-        margin-top: 20px;
+        margin-top: 20px; 
     }
 
     .btn:hover {
         background-color: #fff1b3;
     }
+
+.profile-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    height: auto;
+
+}

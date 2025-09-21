@@ -52,6 +52,9 @@ body {
 }
 
 .profile-img {
+  transform: rotate(90deg);
+  transform-origin: center;
+  
   width: 100%;
   height: 100vh; /* Full viewport height */
   object-fit: cover; /* Ensure the image covers the area */

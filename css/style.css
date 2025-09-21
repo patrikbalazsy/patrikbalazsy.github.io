@@ -56,9 +56,9 @@ body {
 
   width: 100%;
   height: 100vh; /* Full viewport height */
-  object-fit: none; /* Ensure the image covers the area */
-  object-position: 33% right; /*shift crop to start from 1/3 of the image */
+  object-fit: cover; /* Ensure the image covers the area */
   border: 0; /* Remove border if any */
   margin: 0;
-  display: block /* Remove inline spacing */
+  display: block; /* Remove inline spacing */
+  clip-path: inset(0 0 0 33%);
 }

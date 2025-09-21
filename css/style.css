@@ -36,10 +36,10 @@ nav a {
         background-color: #fff1b3;
     }
 
+/* Change to make image smaller TODO */
 .profile-img {
-    width: 300px;
-    max-width: 300px;
-    border-radius: 50%;
-    height: auto;
-
+     border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
 }

@@ -1,42 +1,59 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #222;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    padding: 10px;
-    background-color: #fcf8f8;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  min-height: 100vh;
 }
 
-nav a {
-    text-decoration: none;
-    color: #333;
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem;
+  gap: 2rem;
 }
 
-#introduction {
-    text-align: center;
-    padding: 100px 10px;
+.link-tree ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-    
-.btn {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #007BFF;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        margin-top: 20px; 
-    }
 
-.btn:hover {
-        background-color: #fff1b3;
+.link-tree li {
+  margin: 0.5rem 0;
+}
+
+.link-tree a {
+  text-decoration: none;
+  color: #222;
+  font-size: 0.95rem;
+}
+
+.link-tree a:hover {
+  text-decoration: underline;
+}
+
+.about-me, .contact-me {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.right-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
 }
 
 .profile-img {
-   max-height: 200px;
-   max-width: 300%;
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }

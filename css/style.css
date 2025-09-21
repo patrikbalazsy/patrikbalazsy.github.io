@@ -37,6 +37,6 @@ nav a {
 }
 
 .profile-img {
-   height: 200px;
-   width: 300%;
+   max-height: 200px;
+   max-width: 300%;
 }

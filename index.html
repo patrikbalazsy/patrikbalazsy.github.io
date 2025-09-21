@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrik Balazsy | Homepage</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patrik | Home</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation Header -->
-     <nav>
+  <div class="container">
+    <!-- Left Section -->
+    <div class="left-column">
+      <!-- Link Tree -->
+      <nav class="link-tree">
         <ul>
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a></li>
+          <li><a href="https://twitter.com/YOUR_TWITTER" target="_blank">Twitter</a></li>
         </ul>
-     </nav>
+      </nav>
 
-    <!-- Introdcution Section -->
-    <section id="introduction">
-        <h1>Welcome!</h1>
-        <p>Bio</p>
-        <!-- Image citation: https://unsplash.com/s/photos/polar-bear-->
-        <img src="images/polarbear.jpg" alt="Profile Picture" class="profile-img"> 
-        <!-- <img src="images/polarbear.jpg" alt="Profile Picture" style="width:300px;height:200px;"> -->
-    </section>
+      <!-- About Me -->
+      <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+          Hi, I’m Patrik — a computer science student passionate about coding, robotics,
+          and exploring technology. I love building projects and sharing what I learn.
+        </p>
+      </section>
 
-     <script src="js/script.js"></script>
+      <!-- Contact Me -->
+      <section class="contact-me">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      </section>
+    </div>
+
+    <!-- Right Section: Image -->
+    <div class="right-column">
+      <img src="images/sunset-purple" alt="Portrait" class="profile-img">
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
-

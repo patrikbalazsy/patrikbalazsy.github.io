@@ -1,12 +1,10 @@
-body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: tan;
-    }
+html, body {
+  height: 100%;
+  margin: 0.42in;
+  padding: 0;
+  background-color: tan;
+  box-sizing: border-box;
+}
 
       /* Background image for this page */
     .contactbody {
@@ -23,19 +21,17 @@ body {
       min-height: 100vh;
       width: 100%;
     }
-
-    .aboutbody {
-      margin: 0;
+.aboutbody {
+  margin: 0;
       padding: 0;
-      font-family: 'Trebuchet MS', serif; 
-      max-width: 550px;
-      color: tan; 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      width: 100%;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* center children horizontally */
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Trebuchet MS', serif;
+  background-color: tan;    /* keep your background */
+}
 
     .creativebody {
 
@@ -46,13 +42,27 @@ body {
       margin-top: 0.5in; /* ~1 inch from top */
       font-size: 2rem; /* medium unique size */
       font-family: 'Trebuchet MS', serif; 
+      color: #222222;
       text-align: center;
     }
 
     .site-title a {
-      text-decoration: none;
-      color: black;
-    }
+  text-decoration: none;
+  color: #222222;       /* default link color */
+}
+
+.site-title a:visited {
+  color: #222222;       /* visited links stay the same */
+}
+
+.site-title a:hover {
+  color: #0077cc;       /* optional hover effect */
+}
+
+.site-title a:active {
+  color: #222222;       /* when clicked */
+}
+
 
     /* Link tree styling */
     .link-tree ul {
@@ -68,7 +78,8 @@ body {
 
     .link-tree a {
       text-decoration: none;
-      color: #333;
+      font-family: 'Trebuchet MS', serif; 
+      color: #222222;
       transition: color 0.2s ease;
     }
 
@@ -76,16 +87,16 @@ body {
       color: #0077cc;
     }
 
-    .contact-description {
-      margin-top: 1rem;
-      font-family: 'Trebuchet MS', serif; 
-      max-width: 420px;
-      text-align: center;
-      font-size: 1.2rem;
-      line-height: 1.4;
-      color: black;
-      font-weight: semibold;
-    }
+.contact-description {
+  max-width: 700px;    /* responsive readable width; change to 420px if you prefer */
+  width: 420px;
+  margin: 0.5rem auto;   /* centers block-level element */
+  text-align: center;  /* center text inside the block */
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #222222;
+  font-weight: 420;    /* use numeric weight (semibold is not valid CSS) */
+}
 
     
 

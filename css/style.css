@@ -12,11 +12,11 @@ body {
     .contactbody {
       margin: 0;
       padding: 0;
+      color: black; /* makes text visible on dark backgrounds */
       background-image: url("../Images/matt-drenth-sASTuKKb1b4-unsplash.jpg"); /* put your image in /images folder */
       background-size: cover;   /* makes it cover the whole screen */
       background-position: center; /* centers it nicely */
       background-repeat: no-repeat;
-      color: black; /* makes text visible on dark backgrounds */
       display: flex;
       flex-direction: column;
       align-items: center;

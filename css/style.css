@@ -8,6 +8,22 @@ body {
       background-color: tan;
     }
 
+      /* Background image for this page */
+    .contactbody {
+      margin: 0;
+      padding: 0;
+      background-image: url("../Images/matt-drenth-sASTuKKb1b4-unsplash.jpg"); /* put your image in /images folder */
+      background-size: cover;   /* makes it cover the whole screen */
+      background-position: center; /* centers it nicely */
+      background-repeat: no-repeat;
+      color: white; /* makes text visible on dark backgrounds */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+    }
+
     /* Name styling */
     .site-title {
       margin-top: 1in; /* ~1 inch from top */
@@ -52,22 +68,6 @@ body {
       line-height: 1.4;
       color: black;
       font-weight: semibold;
-    }
-
-     /* Background image for this page */
-    .contactbody {
-      margin: 0;
-      padding: 0;
-      background-image: url("../Images/matt-drenth-sASTuKKb1b4-unsplash.jpg"); /* put your image in /images folder */
-      background-size: cover;   /* makes it cover the whole screen */
-      background-position: center; /* centers it nicely */
-      background-repeat: no-repeat;
-      color: white; /* makes text visible on dark backgrounds */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      width: 100%;
     }
 
     .aboutbody {

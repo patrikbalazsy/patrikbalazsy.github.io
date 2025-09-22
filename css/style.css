@@ -16,7 +16,7 @@ body {
       background-size: cover;   /* makes it cover the whole screen */
       background-position: center; /* centers it nicely */
       background-repeat: no-repeat;
-      color: white; /* makes text visible on dark backgrounds */
+      color: black; /* makes text visible on dark backgrounds */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -24,9 +24,26 @@ body {
       width: 100%;
     }
 
+    .aboutbody {
+      margin: 0;
+      padding: 0;
+      font-family: 'Trebuchet MS', serif; 
+      max-width: 550px;
+      color: tan; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    .creativebody {
+
+    }
+
     /* Name styling */
     .site-title {
-      margin-top: 1in; /* ~1 inch from top */
+      margin-top: 0.5in; /* ~1 inch from top */
       font-size: 2rem; /* medium unique size */
       font-family: 'Trebuchet MS', serif; 
       text-align: center;
@@ -70,16 +87,6 @@ body {
       font-weight: semibold;
     }
 
-    .aboutbody {
-      margin-top: 1rem;
-      font-family: 'Trebuchet MS', serif; 
-      max-width: 550px;
-      color: tan; /* makes text visible on dark backgrounds */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      width: 100%;
-    }
+    
 
  

@@ -30,7 +30,7 @@ html, body {
   justify-content: flex-start; /* keep content starting from the top */
   min-height: 100vh;
   width: 100%;
-  padding: 0;
+  
   font-family: 'Trebuchet MS', serif;
   text-align: center;
 }
@@ -128,6 +128,21 @@ html, body {
   line-height: 1.4;
   color: #222222;
   font-weight: 420;
+    padding: 0 0 110px 0;
+
+}
+
+.about-description {
+  max-width: 700px;
+  width: 350px;
+  margin: 2rem auto 0; /* consistent space below title */
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #222222;
+  font-weight: 420;
+    padding: 0 0 110px 0;
+
 }
 
 /* ---------- Creative page tiles ---------- */
@@ -170,7 +185,8 @@ html, body {
   gap: 1rem;
   max-width: calc(4 * 240px + 3 * 1rem); /* ✅ ensures no more than 4 columns */
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 0 1rem 110px 0;
+
 }
 
 .gallery img {

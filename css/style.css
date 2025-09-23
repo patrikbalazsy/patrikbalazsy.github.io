@@ -143,16 +143,21 @@ body {
 /* ---------- Creative Gallery ---------- */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  /* ✅ 4 columns max, each column can shrink but not below 200px */
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 1rem;
-  max-width: calc(4 * 240px + 3 * 1rem); /* hard cap at 4 columns */
+  width: 100%;
+  max-width: calc(4 * 288px + 3 * 1rem); /* hard cap at 4 columns */
   margin: 2rem auto;
   padding: 0 1rem 110px;
+  box-sizing: border-box;
 }
 
 .gallery img {
-  width: 100%;
+  max-width: 288px; /* ✅ never larger than 3 inches */
+  width: 100%;      /* ✅ fills column */
   height: auto;
+  margin: 0 auto;
   cursor: pointer;
   border-radius: 0.25rem;
   transition: transform 0.2s ease;
@@ -161,6 +166,28 @@ body {
 .gallery img:hover {
   transform: scale(1.03);
 }
+
+/* ✅ Tablet: collapse to max 3 columns */
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
+  }
+}
+
+/* ✅ Small screens: collapse to 2 columns */
+@media (max-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  }
+}
+
+/* ✅ Extra small: single column */
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* ---------- Lightbox ---------- */
 .lightbox {

@@ -159,7 +159,7 @@ body {
   height: auto;
   margin: 0 auto;
   cursor: pointer;
-  border-radius: 0.25rem;
+  border-radius: 0rem;
   transition: transform 0.2s ease;
 }
 
@@ -211,7 +211,7 @@ body {
   max-width: 90%;
   max-height: 70%;
   margin-bottom: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
 }
 
 /* Caption area */

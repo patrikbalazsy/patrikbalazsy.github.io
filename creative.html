@@ -1,16 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Creative | Patrik Balazsy</title>
-  <link rel="icon" type="image/x-icon" href="/Images/favicon.ico?v=2">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="mainbody">
-  <h1 class="site-title">
-    <a href="index.html">Patrik Balazsy</a>
-  </h1>
-<script src="js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative | Patrik Balazsy</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="creativebody">
+    <h1 class="site-title">
+      <a href="index.html">Patrik Balazsy</a>
+    </h1>
+
+    <div class="gallery">
+      <!-- Each image has data-title and data-caption for the lightbox -->
+      <img
+        src="Images/lee-robinson-Yc9h5SJdEzI-unsplash.jpg"
+        alt="Photo 1"
+        data-title="Photo 1"
+        data-caption="This is photo 1."
+      />
+      <img
+        src="Images/mike-benna-kX012NDcCKQ-unsplash.jpg"
+        alt="Photo 2"
+        data-title="Photo 2"
+        data-caption="This is photo 2."
+      />
+      <img
+        src="Images/photo3.jpg"
+        alt="Photo 3"
+        data-title="Photo 3"
+        data-caption="This is photo 3."
+      />
+      <img
+        src="Images/photo4.jpg"
+        alt="Photo 4"
+        data-title="Photo 4"
+        data-caption="This is photo 4."
+      />
+      <img
+        src="Images/photo1.jpg"
+        alt="Photo 5"
+        data-title="Photo 5"
+        data-caption="This is photo 5."
+      />
+      <img
+        src="Images/photo2.jpg"
+        alt="Photo 6"
+        data-title="Photo 6"
+        data-caption="This is photo 6."
+      />
+      <img
+        src="Images/photo3.jpg"
+        alt="Photo 7"
+        data-title="Photo 7"
+        data-caption="This is photo 7."
+      />
+      <img
+        src="Images/photo4.jpg"
+        alt="Photo 8"
+        data-title="Photo 8"
+        data-caption="This is photo 8."
+      />
+      <img
+        src="Images/photo1.jpg"
+        alt="Photo 9"
+        data-title="Photo 9"
+        data-caption="This is photo 9."
+      />
+      <img
+        src="Images/photo2.jpg"
+        alt="Photo 10"
+        data-title="Photo 10"
+        data-caption="This is photo 10."
+      />
+      <img
+        src="Images/photo3.jpg"
+        alt="Photo 11"
+        data-title="Photo 11"
+        data-caption="This is photo 11."
+      />
+      <img
+        src="Images/photo4.jpg"
+        alt="Photo 12"
+        data-title="Photo 12"
+        data-caption="This is photo 12."
+      />
+      <img
+        src="Images/photo1.jpg"
+        alt="Photo 13"
+        data-title="Photo 13"
+        data-caption="This is photo 13."
+      />
+      <img
+        src="Images/photo2.jpg"
+        alt="Photo 14"
+        data-title="Photo 14"
+        data-caption="This is photo 14."
+      />
+      <img
+        src="Images/photo3.jpg"
+        alt="Photo 15"
+        data-title="Photo 15"
+        data-caption="This is photo 15."
+      />
+      <img
+        src="Images/photo4.jpg"
+        alt="Photo 16"
+        data-title="Photo 16"
+        data-caption="This is photo 16."
+      />
+      <img
+        src="Images/photo1.jpg"
+        alt="Photo 17"
+        data-title="Photo 17"
+        data-caption="This is photo 17."
+      />
+      <img
+        src="Images/photo2.jpg"
+        alt="Photo 18"
+        data-title="Photo 18"
+        data-caption="This is photo 18."
+      />
+      <img
+        src="Images/photo3.jpg"
+        alt="Photo 19"
+        data-title="Photo 19"
+        data-caption="This is photo 19."
+      />
+      <img
+        src="Images/photo4.jpg"
+        alt="Photo 20"
+        data-title="Photo 20"
+        data-caption="This is photo 20."
+      />
+      <img
+        src="Images/photo1.jpg"
+        alt="Photo 21"
+        data-title="Photo 21"
+        data-caption="This is photo 21."
+      />
+      <img
+        src="Images/photo2.jpg"
+        alt="Photo 22"
+        data-title="Photo 22"
+        data-caption="This is photo 22."
+      />
+      <img
+        src="Images/photo3.jpg"
+        alt="Photo 23"
+        data-title="Photo 23"
+        data-caption="This is photo 23."
+      />
+      <img
+        src="Images/photo4.jpg"
+        alt="Photo 24"
+        data-title="Photo 24"
+        data-caption="This is photo 24."
+      />
+
+      <!-- Add as many as you want -->
+    </div>
+
+    <!-- Lightbox overlay -->
+    <div id="lightbox" class="lightbox hidden">
+      <button class="close-btn">&times;</button>
+      <button class="arrow left">&#10094;</button>
+      <img id="lightbox-img" src="" alt="" />
+      <button class="arrow right">&#10095;</button>
+      <div class="caption">
+        <h2 id="lightbox-title"></h2>
+        <p id="lightbox-caption"></p>
+      </div>
+    </div>
+
+    <script src="js/creative.js"></script>
+  </body>
 </html>

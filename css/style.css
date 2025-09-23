@@ -1,64 +1,69 @@
-html, body {
+/* ---------- Global Resets ---------- */
+html {
   height: 100%;
-  width: 100%;
+  overflow-y: scroll; /* Prevents layout shift when scrollbar appears */
+}
+
+body {
+  height: 100%;
   margin: 0;
-  padding: 0;
-  background-color: beige;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.mainbody {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 100vh;
-  width: 100%;
   font-family: 'Trebuchet MS', serif;
-  text-align: center;
   background-color: beige;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-/* ---------- Page body containers ---------- */
+/* ---------- Shared Page Container Styles ---------- */
+.mainbody,
 .contactbody,
 .aboutbody,
 .creativebody {
   display: flex;
   flex-direction: column;
   align-items: center;      /* horizontally center children */
-  justify-content: flex-start; /* keep content starting from the top */
+  justify-content: flex-start;
   min-height: 100vh;
   width: 100%;
-  
-  font-family: 'Trebuchet MS', serif;
-  text-align: center;
-}
-
-.contactbody {
-  background-image: url("../Images/matt-drenth-sASTuKKb1b4-unsplash.jpg");
-  background-color: beige;
-  
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.aboutbody {
-  background-color: beige;
-}
-
-.creativebody {
-  background-color: beige;
+  padding: 0 1rem; /* Consistent horizontal padding for all pages */
   box-sizing: border-box;
 }
 
-/* Hide elements until JS reveals them */
+/* ---------- Page-Specific Backgrounds ---------- */
+.contactbody {
+  background: beige url("../Images/matt-drenth-sASTuKKb1b4-unsplash.jpg") center / cover no-repeat;
+}
+
+.aboutbody,
+.creativebody {
+  background-color: beige;
+}
+
+/* ---------- Site Title ---------- */
+.site-title {
+  display: block;
+  width: 100%;
+  margin: 3rem 0 0; /* Same gap on every page */
+  font-size: 2.4rem;
+  font-family: 'Trebuchet MS', serif;
+  color: #222;
+  text-align: center;
+  align-self: stretch; /* Ensures full width inside flex container */
+}
+
+.site-title a {
+  text-decoration: none;
+  color: #222;
+}
+
+.site-title a:hover {
+  color: #0077cc;
+}
+
+/* ---------- Reveal Animation for Contact Page ---------- */
 .contactbody .site-title,
 .contactbody .contact-description {
   opacity: 0;
-  transition: opacity 0.8s ease; /* smooth fade-in */
+  transition: opacity 0.8s ease;
 }
 
 .contactbody.loaded .site-title,
@@ -66,37 +71,27 @@ html, body {
   opacity: 1;
 }
 
-/* ---------- Site title ---------- */
-.site-title {
-  width: 100%;
-  margin: 3rem 0 0; /* same gap from top across all pages */
-  font-size: 2.4rem;
-  font-family: 'Trebuchet MS', serif; 
-  color: #222222;
+/* ---------- Text Blocks ---------- */
+.contact-description,
+.about-description {
+  max-width: 700px;
+  margin: 2rem auto 0;
+  padding-bottom: 110px; /* Bottom spacing */
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #222;
+  font-weight: 420;
   text-align: center;
 }
 
-.site-title a {
-  text-decoration: none;
-  color: #222222;
-}
+.contact-description { width: 420px; }
+.about-description   { width: 350px; }
 
-.site-title a:visited {
-  color: #222222;
-}
-
-.site-title a:hover {
-  color: #0077cc;
-}
-
-.site-title a:active {
-  color: #222222;
-}
-
-/* ---------- Link tree styling ---------- */
+/* ---------- Link Tree ---------- */
 .link-tree ul {
   list-style: none;
   padding: 0;
+  margin: 2rem auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,13 +99,11 @@ html, body {
   font-size: 1.2rem;
   font-weight: 420;
   max-width: 700px;
-  margin: 2rem auto 0; /* consistent space below title */
 }
 
 .link-tree a {
   text-decoration: none;
-  font-family: 'Trebuchet MS', serif; 
-  color: #222222;
+  color: #222;
   transition: color 0.2s ease;
 }
 
@@ -118,41 +111,14 @@ html, body {
   color: #0077cc;
 }
 
-/* ---------- Contact page text ---------- */
-.contact-description {
-  max-width: 700px;
-  width: 420px;
-  margin: 2rem auto 0; /* consistent space below title */
-  text-align: center;
-  font-size: 1.2rem;
-  line-height: 1.4;
-  color: #222222;
-  font-weight: 420;
-    padding: 0 0 110px 0;
-
-}
-
-.about-description {
-  max-width: 700px;
-  width: 350px;
-  margin: 2rem auto 0; /* consistent space below title */
-  text-align: center;
-  font-size: 1.2rem;
-  line-height: 1.4;
-  color: #222222;
-  font-weight: 420;
-    padding: 0 0 110px 0;
-
-}
-
-/* ---------- Creative page tiles ---------- */
+/* ---------- Creative Tiles (if still used somewhere) ---------- */
 .creative-tiles {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 100%;
   max-width: 600px;
-  margin: 3rem auto 0; /* consistent space below title */
+  width: 100%;
+  margin: 3rem auto 0;
 }
 
 .creative-tile {
@@ -160,12 +126,12 @@ html, body {
   align-items: center;
   justify-content: center;
   height: 120px;
-  background-color: #222;  /* dark background */
+  background-color: #222;
   color: white;
   font-size: 1.5rem;
   font-weight: 240;
-  text-decoration: none;
   border-radius: 0.5rem;
+  text-decoration: none;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
@@ -174,19 +140,14 @@ html, body {
   background-color: #333;
 }
 
-.creative-tile span {
-  text-align: center;
-}
-
 /* ---------- Creative Gallery ---------- */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
-  max-width: calc(4 * 240px + 3 * 1rem); /* ✅ ensures no more than 4 columns */
+  max-width: calc(4 * 240px + 3 * 1rem); /* hard cap at 4 columns */
   margin: 2rem auto;
-  padding: 0 1rem 110px 0;
-
+  padding: 0 1rem 110px;
 }
 
 .gallery img {
@@ -210,17 +171,14 @@ html, body {
   height: 100%;
   background: rgba(0, 0, 0, 0.9);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   z-index: 9999;
-  opacity: 1;
   transition: opacity 0.3s ease;
 }
 
-.lightbox.hidden {
-  display: none;
-}
+.lightbox.hidden { display: none; }
 
 .lightbox img {
   max-width: 90%;
@@ -236,18 +194,10 @@ html, body {
   max-width: 80%;
 }
 
-.caption h2 {
-  margin: 0;
-  font-size: 1.4rem;
-}
+.caption h2 { margin: 0; font-size: 1.4rem; }
+.caption p  { margin: 0.3rem 0 0; font-size: 1rem; opacity: 0.85; }
 
-.caption p {
-  font-size: 1rem;
-  margin: 0.3rem 0 0;
-  opacity: 0.85;
-}
-
-/* Close and arrows */
+/* Lightbox controls */
 .close-btn,
 .arrow {
   position: absolute;
@@ -259,25 +209,10 @@ html, body {
   transition: color 0.2s ease;
 }
 
-.close-btn {
-  top: 1rem;
-  right: 1rem;
-}
-
-.arrow.left {
-  top: 50%;
-  left: 1rem;
-  transform: translateY(-50%);
-}
-
-.arrow.right {
-  top: 50%;
-  right: 1rem;
-  transform: translateY(-50%);
-}
+.close-btn { top: 1rem; right: 1rem; }
+.arrow.left  { top: 50%; left: 1rem;  transform: translateY(-50%); }
+.arrow.right { top: 50%; right: 1rem; transform: translateY(-50%); }
 
 .close-btn:hover,
-.arrow:hover {
-  color: #0077cc;
-}
+.arrow:hover { color: #0077cc; }
 

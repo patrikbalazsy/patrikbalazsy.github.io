@@ -1,0 +1,249 @@
+html {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Trebuchet MS", serif;
+  background-color: beige;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* -- Shared Page Container Styles -- */
+.mainbody,
+.contactbody,
+.aboutbody,
+.creativebody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* -- Page-Specific Backgrounds -- */
+.contactbody {
+  background: beige url("../assets/img/matt-drenth-sASTuKKb1b4-unsplash.jpg")
+    center / cover no-repeat;
+}
+
+.aboutbody,
+.creativebody {
+  background-color: beige;
+}
+
+/* -- Site Title -- */
+.site-title {
+  display: block;
+  width: 100%;
+  margin: 3rem 0 0;
+  font-size: 2.4rem;
+  font-family: "Trebuchet MS", serif;
+  color: #222;
+  text-align: center;
+  align-self: stretch;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: #222;
+}
+
+.site-title a:hover {
+  color: #0077cc;
+}
+
+/* -- Delayed Animation for Contact Page -- */
+.contactbody .site-title,
+.contactbody .contact-description {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.contactbody.loaded .site-title,
+.contactbody.loaded .contact-description {
+  opacity: 1;
+}
+
+/* -- Text Blocks -- */
+.contact-description,
+.about-description {
+  max-width: 700px;
+  margin: 2rem auto 0;
+  padding-bottom: 110px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #222;
+  font-weight: 400;
+  text-align: center;
+}
+
+.contact-description {
+  width: 100%;
+  max-width: 445px;
+}
+
+.about-description {
+  width: 100%;
+  max-width: 345px;
+}
+
+/* -- Link Tree -- */
+.link-tree ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.link-tree a {
+  text-decoration: none;
+  color: #222;
+  transition: color 0.2s ease;
+}
+
+.link-tree a:hover {
+  color: #0077cc;
+}
+
+/* -- Creative Gallery -- */
+.gallery {
+  display: grid;
+  /* 4 columns max, each column can shrink but not below 200px */
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: calc(4 * 288px + 3 * 1rem);
+  margin: 2rem auto;
+  padding: 0 1rem 110px;
+  box-sizing: border-box;
+}
+
+.gallery img {
+  max-width: 288px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 0rem;
+  transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* Tablet: collapse to max 3 columns */
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
+  }
+}
+
+/* Small screens: collapse to 2 columns */
+@media (max-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  }
+}
+
+/* Extra small: single column */
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -- Lightbox -- */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.hidden {
+  display: none;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 70%;
+  margin-bottom: 1rem;
+  border-radius: 0rem;
+}
+
+/* Caption area */
+.caption {
+  text-align: center;
+  color: white;
+  max-width: 80%;
+}
+
+.caption h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+.caption p {
+  margin: 0.3rem 0 0;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* Lightbox controls */
+.close-btn,
+.arrow {
+  position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-btn {
+  top: 1rem;
+  right: 1rem;
+}
+.arrow.left {
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+.arrow.right {
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+
+.close-btn:hover,
+.arrow:hover {
+  color: #0077cc;
+}
+
+img.emoji {
+  height: 1.425em;
+  width: 1.425;
+  vertical-align: -0.334em;
+}

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     currentIndex = index;
     lightboxImg.src = img.src;
     lightboxTitle.textContent = img.dataset.title || '';
-    lightboxCaption.textContent = img.dataset.caption || '';
+    lightboxCaption.innerHTML = img.dataset.caption || '';
     lightbox.classList.remove('hidden');
   }
 

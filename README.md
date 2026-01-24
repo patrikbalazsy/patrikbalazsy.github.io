@@ -1,4 +1,4 @@
-# patrikbalazsy.github.io 🌐
+# patrikbalazsy.github.io
 
 Personal website built from scratch as a landing page.
 

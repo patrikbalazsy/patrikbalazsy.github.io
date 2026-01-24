@@ -1,145 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Browse Patrik Balazsy's exploration gallery with interactive lightbox captions."
-    />
-    <title>Explore | Patrik Balazsy</title>
-    <link rel="icon" href="assets/icons/favicon.ico" />
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body class="creativebody">
-    <h1 class="site-title">
-      <a href="index.html">Patrik Balazsy</a>
-    </h1>
 
-    <div class="gallery">
-      <!-- Each image has data-title and data-caption for the lightbox -->
-      <img
-        loading="lazy"
-        decoding="async"
-        src="assets/img/personal-website-color.png"
-        alt="Photo 1"
-        data-title="Personal Website"
-        data-caption="Built with HTML, CSS, and JavaScript. Serves as a personal landing page with a clean, minimalist design.
-        <a href='https://github.com/patrikbalazsy/patrikbalazsy.github.io' target='_blank' rel='noopener noreferrer'>GitHub</a> (Version 01/26)"
-      />
-      <img
-        loading="lazy"
-        decoding="async"
-        src="assets/img/ddi.png"
-        alt="Photo 2"
-        data-title="Undergraduate Group Research Paper"
-        data-caption="Network science analysis conducted in RStudio using a drug–drug interaction dataset.
-        <a href='https://github.com/patrikbalazsy/cosc-421-project-2025'>GitHub</a> (11/25)"
-      />
-      <img
-        loading="lazy"
-        decoding="async"
-        src="assets/img/ubcar.png"
-        alt="Photo 3"
-        data-title=" UBCAR Ride Share HCI Group Project"
-        data-caption="Horizontal prototype developed in Java and JavaScript using the Google Maps API within Android Studio. Demo video available privately. (03/25)"
-      />
-      <img
-        loading="lazy"
-        decoding="async"
-        src="assets/img/null-pointers.png"
-        alt="Photo 4"
-        data-title="Full Stack Movie Recommender Site"
-        data-caption="Dockerized group software engineering project featuring a FastAPI backend and a Next.js frontend.
-        <a href='https://github.com/Null-Pointers-2/COSC-310-Project-2025'>GitHub</a> (11/25)"
-      />
-      <img
-        loading="lazy"
-        decoding="async"
-        src="assets/img/cloud-eight.png"
-        alt="Photo 5"
-        data-title="Full Stack Online Shop"
-        data-caption="Group project implemented primarily in Java, with Microsoft SQL Server used for the database backend.
-        <a href='https://github.com/patrikbalazsy/cosc-304-project-2025'>GitHub</a> (11/25)"
-      />
-      <img
-        loading="lazy"
-        decoding="async"
-        src="assets/img/solver-max-pulp.png"
-        alt="Photo 6"
-        data-title="Fantasy Premier League Team Selection Optimizer"
-        data-caption="Basic optimization tool built in Python using the PuLP library. Applies the Simplex algorithm to maximize value based on player cost and performance data.
-        Source files no longer available. (07/25)"
-      />
-      <img
-        loading="lazy"
-        decoding="async"
-        src="assets/img/canvas-connect.png"
-        alt="Photo 7"
-        data-title="Canvas Connect"
-        data-caption="Full-stack hackathon team project focused on improving academic platform connectivity.
-        <a href='https://github.com/taoTimTim/C2Hakathon2025'>GitHub</a> (11/25)"   
-      />
-      <img
-        loading="lazy"
-        decoding="async"
-        src="assets/img/scipy.svg"
-        alt="Photo 8"
-        data-title="Smooth Path Generation [In progress]"
-        data-caption="Ongoing project integrating SciPy to generate smooth movement paths for an autonomous submarine. Targets an MVP by wrapping MOVE_ABSOLUTE. Implemented using C++, Python, and ROS 2.
-        <a href='https://github.com/Okanagan-Marine-Robotics/okmr_auv'>GitHub</a> (Current)"
-      />
-      <img
-        loading="lazy"
-        decoding="async"
-        src="assets/img/division-alg.png"
-        alt="Photo 9"
-        data-title="Division Algorithm Implemented Using SageMath in Python"
-        data-caption="Partial implementation of the polynomial division algorithm using SageMath. Work in progress. (01/26-Current)"
-      />
-      <img
-        loading="lazy"
-        decoding="async"
-        src="assets/img/permutations.png"
-        alt="Photo 10"
-        data-title="2x2 Rubiks Cube Derivation from Permutation Groups [In progress]"
-        data-caption="Mathematical derivation of the 2×2 Rubik’s Cube using permutation group theory (Current).
-        Reference image credit: r/math (kisonecat)."
-      />
-         <img
-        loading="lazy"
-        decoding="async"
-        src="assets/img/research.png"
-        alt="Photo 11"
-        data-title="Curved Display Literature Review [In progress]"
-        data-caption="HCI academic research: systematically coded and organized research papers in a structured spreadsheet and drafted the manuscript using Overleaf.""
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse Patrik Balazsy's exploration gallery with interactive lightbox captions." />
+  <title>Explore | Patrik Balazsy</title>
+  <link rel="icon" href="assets/icons/favicon.ico" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="aboutbody">
+  <header class="page-header">
+    <h1 class="site-title">
+      <a href="/">Patrik Balazsy</a>
+    </h1>
+  </header>
+
+  <div class="gallery">
+    <!-- Each image has data-title and data-caption for the lightbox -->
+    <img loading="lazy" decoding="async" src="assets/img/personal-website-color.png" alt="Photo 1"
+      data-title="Personal Website"
+      data-caption="Built with HTML, CSS, and JavaScript. Serves as a personal landing page with a clean, minimalist design.
+        <a href='https://github.com/patrikbalazsy/patrikbalazsy.github.io' target='_blank' rel='noopener noreferrer'>GitHub</a> (Version 01/26)" />
+    <img loading="lazy" decoding="async" src="assets/img/ddi.png" alt="Photo 2"
+      data-title="Undergraduate Group Research Paper" data-caption="Network science analysis conducted in RStudio using a drug–drug interaction dataset.
+        <a href='https://github.com/patrikbalazsy/cosc-421-project-2025'>GitHub</a> (11/25)" />
+    <img loading="lazy" decoding="async" src="assets/img/ubcar.png" alt="Photo 3"
+      data-title=" UBCAR Ride Share HCI Group Project"
+      data-caption="Horizontal prototype developed in Java and JavaScript using the Google Maps API within Android Studio. Demo video available privately. (03/25)" />
+    <img loading="lazy" decoding="async" src="assets/img/null-pointers.png" alt="Photo 4"
+      data-title="Full Stack Movie Recommender Site" data-caption="Dockerized group software engineering project featuring a FastAPI backend and a Next.js frontend.
+        <a href='https://github.com/Null-Pointers-2/COSC-310-Project-2025'>GitHub</a> (11/25)" />
+    <img loading="lazy" decoding="async" src="assets/img/cloud-eight.png" alt="Photo 5"
+      data-title="Full Stack Online Shop" data-caption="Group project implemented primarily in Java, with Microsoft SQL Server used for the database backend.
+        <a href='https://github.com/patrikbalazsy/cosc-304-project-2025'>GitHub</a> (11/25)" />
+    <img loading="lazy" decoding="async" src="assets/img/solver-max-pulp.png" alt="Photo 6"
+      data-title="Fantasy Premier League Team Selection Optimizer" data-caption="Basic optimization tool built in Python using the PuLP library. Applies the Simplex algorithm to maximize value based on player cost and performance data.
+        Source files no longer available. (07/25)" />
+    <img loading="lazy" decoding="async" src="assets/img/canvas-connect.png" alt="Photo 7" data-title="Canvas Connect"
+      data-caption="Full-stack hackathon team project focused on improving academic platform connectivity.
+        <a href='https://github.com/taoTimTim/C2Hakathon2025'>GitHub</a> (11/25)" />
+    <img loading="lazy" decoding="async" src="assets/img/scipy.svg" alt="Photo 8"
+      data-title="Smooth Path Generation [In progress]" data-caption="Ongoing project integrating SciPy to generate smooth movement paths for an autonomous submarine. Targets an MVP by wrapping MOVE_ABSOLUTE. Implemented using C++, Python, and ROS 2.
+        <a href='https://github.com/Okanagan-Marine-Robotics/okmr_auv'>GitHub</a> (Current)" />
+    <img loading="lazy" decoding="async" src="assets/img/division-alg.png" alt="Photo 9"
+      data-title="Division Algorithm Implemented Using SageMath in Python"
+      data-caption="Partial implementation of the polynomial division algorithm using SageMath. Work in progress. (01/26-Current)" />
+    <img loading="lazy" decoding="async" src="assets/img/permutations.png" alt="Photo 10"
+      data-title="2x2 Rubiks Cube Derivation from Permutation Groups [In progress]" data-caption="Mathematical derivation of the 2×2 Rubik’s Cube using permutation group theory (Current).
+        Reference image credit: r/math (kisonecat)." />
+    <img loading="lazy" decoding="async" src="assets/img/research.png" alt="Photo 11"
+      data-title="Curved Display Literature Review [In progress]"
+      data-caption="HCI academic research: systematically coded and organized research papers in a structured spreadsheet and drafted the manuscript using Overleaf.""
       />
         <img
-        loading="lazy"
-        decoding="async"
-        src="assets/img/photo12.jpg"
-        alt="Photo 12"
-        data-title="TBD"
-        data-caption="Placeholder (N/A)"
-      />
-    </div>
+        loading=" lazy" decoding="async" src="assets/img/photo12.jpg" alt="Photo 12" data-title="TBD"
+      data-caption="Placeholder (N/A)" />
+  </div>
 
-    <!-- Lightbox overlay -->
-    <div id="lightbox" class="lightbox hidden">
-      <button class="close-btn">&times;</button>
-      <button class="arrow left">&#10094;</button>
-      <img id="lightbox-img" src="" alt="" />
-      <button class="arrow right">&#10095;</button>
-      <div class="caption">
-        <h2 id="lightbox-title"></h2>
-        <p id="lightbox-caption"></p>
-      </div>
+  <!-- Lightbox overlay -->
+  <div id="lightbox" class="lightbox hidden">
+    <button class="close-btn">&times;</button>
+    <button class="arrow left">&#10094;</button>
+    <img id="lightbox-img" src="" alt="" />
+    <button class="arrow right">&#10095;</button>
+    <div class="caption">
+      <h2 id="lightbox-title"></h2>
+      <p id="lightbox-caption"></p>
     </div>
+  </div>
 
-    <footer class="contact-footer">
+  <footer class="contact-footer">
     © 2025 Patrik Balazsy
-    </footer>
+  </footer>
 
-    <script src="js/creative.js" defer></script>
-  </body>
+  <script src="js/creative.js" defer></script>
+</body>
+
 </html>

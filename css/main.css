@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  scrollbar-gutter: stable;
   overflow-y: auto;
 }
 
@@ -29,8 +30,7 @@ body {
 
 /* -- Page-Specific Backgrounds -- */
 .contactbody {
-  background: #ededed url("../assets/img/matt-drenth-sASTuKKb1b4-unsplash.jpg")
-    center / cover no-repeat;
+  background: #ededed url("../assets/img/matt-drenth-sASTuKKb1b4-unsplash.jpg") center / cover no-repeat;
 }
 
 .aboutbody,
@@ -42,13 +42,19 @@ body {
 .site-title {
   display: block;
   width: 100%;
-  margin: 3rem 0 0;
-  font-size: 2.4rem;
+  margin: 0;
+  font-size: 2.3rem;
   font-family: "Trebuchet MS", serif;
   color: #222;
   text-align: center;
   align-self: stretch;
 }
+
+.page-header {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
 
 .site-title a {
   text-decoration: none;
@@ -60,7 +66,7 @@ body {
 }
 
 .contact-footer {
-  margin-top: auto; 
+  margin-top: auto;
   color: #222;
   padding-bottom: 1rem;
   font-size: 0.9rem;
@@ -217,6 +223,7 @@ body {
   margin: 0;
   font-size: 1.4rem;
 }
+
 .caption p {
   margin: 0.3rem 0 0;
   font-size: 1rem;
@@ -239,11 +246,13 @@ body {
   top: 1rem;
   right: 1rem;
 }
+
 .arrow.left {
   top: 50%;
   left: 1rem;
   transform: translateY(-50%);
 }
+
 .arrow.right {
   top: 50%;
   right: 1rem;
@@ -253,10 +262,4 @@ body {
 .close-btn:hover,
 .arrow:hover {
   color: #0077cc;
-}
-
-img.emoji {
-  height: 1.425em;
-  width: 1.425;
-  vertical-align: -0.334em;
 }

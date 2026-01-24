@@ -1,13 +1,13 @@
 html {
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 body {
   height: 100%;
   margin: 0;
   font-family: "Trebuchet MS", serif;
-  background-color: beige;
+  background-color: #ededed;
   text-align: center;
   box-sizing: border-box;
 }
@@ -23,19 +23,19 @@ body {
   justify-content: flex-start;
   min-height: 100vh;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0;
   box-sizing: border-box;
 }
 
 /* -- Page-Specific Backgrounds -- */
 .contactbody {
-  background: beige url("../assets/img/matt-drenth-sASTuKKb1b4-unsplash.jpg")
+  background: #ededed url("../assets/img/matt-drenth-sASTuKKb1b4-unsplash.jpg")
     center / cover no-repeat;
 }
 
 .aboutbody,
 .creativebody {
-  background-color: beige;
+  background-color: #ededed;
 }
 
 /* -- Site Title -- */
@@ -57,6 +57,14 @@ body {
 
 .site-title a:hover {
   color: #0077cc;
+}
+
+.contact-footer {
+  margin-top: auto; 
+  color: #222;
+  padding-bottom: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.6;
 }
 
 /* -- Delayed Animation for Contact Page -- */
@@ -181,6 +189,11 @@ body {
   z-index: 9999;
   transition: opacity 0.3s ease;
 }
+
+.creativebody .gallery {
+  margin-top: 5rem;
+}
+
 
 .lightbox.hidden {
   display: none;

@@ -1,7 +1,5 @@
 # patrikbalazsy.github.io
 
-Personal website built from scratch as a landing page.
+My personal website
 
-Designed with minimal HTML, CSS, and JavaScript.
-
-Hosted on GitHub Pages, with the domain acquired via Namecheap.
+Designed using HTML, CSS & JavaScript

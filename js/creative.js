@@ -10,11 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let currentIndex = 0;
 
-  if (!lightbox || !lightboxImg || !lightboxTitle || !lightboxCaption || images.length === 0) {
-    return;
-  }
+  if (!lightbox || !lightboxImg || images.length === 0) return;
 
-  function openLightbox(index) {
+  const openLightbox = (index) => {
     const img = images[index];
     if (!img) return;
 
@@ -23,36 +21,26 @@ document.addEventListener('DOMContentLoaded', () => {
     lightboxTitle.textContent = img.dataset.title || '';
     lightboxCaption.innerHTML = img.dataset.caption || '';
     lightbox.classList.remove('hidden');
-  }
+    document.body.style.overflow = 'hidden';
+  };
 
-  function closeLightbox() {
+  const closeLightbox = () => {
     lightbox.classList.add('hidden');
-  }
+    document.body.style.overflow = 'auto';
+  };
 
-  function showNext() {
-    currentIndex = (currentIndex + 1) % images.length;
-    openLightbox(currentIndex);
-  }
-
-  function showPrev() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    openLightbox(currentIndex);
-  }
+  const showNext = () => openLightbox((currentIndex + 1) % images.length);
+  const showPrev = () => openLightbox((currentIndex - 1 + images.length) % images.length);
 
   images.forEach((img, index) => {
+    img.style.animationDelay = `${(index + 1) * 0.1}s`;
     img.addEventListener('click', () => openLightbox(index));
   });
 
-  if (closeBtn) {
-    closeBtn.addEventListener('click', closeLightbox);
-  }
+  closeBtn?.addEventListener('click', closeLightbox);
+  rightArrow?.addEventListener('click', showNext);
+  leftArrow?.addEventListener('click', showPrev);
 
-  if (rightArrow && leftArrow) {
-    rightArrow.addEventListener('click', showNext);
-    leftArrow.addEventListener('click', showPrev);
-  }
-
-  // Keyboard support
   document.addEventListener('keydown', (e) => {
     if (lightbox.classList.contains('hidden')) return;
     if (e.key === 'Escape') closeLightbox();

@@ -48,7 +48,7 @@ body {
   background-repeat: no-repeat;
 
   opacity: 0;
-  animation: slowFade 2s ease-out forwards;
+  animation: slowFade 3s ease-out forwards;
 }
 
 .aboutbody::before {

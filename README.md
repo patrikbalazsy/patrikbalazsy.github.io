@@ -2,4 +2,4 @@
 
 My personal website
 
-Designed using HTML, CSS & JavaScript
+Built using HTML, CSS & JavaScript

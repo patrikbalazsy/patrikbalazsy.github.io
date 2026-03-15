@@ -282,3 +282,28 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+
+  .contact-description,
+  .about-description,
+  .creative-description {
+    max-width: 90%;
+    width: 90%;
+    margin: 2rem auto;
+    padding-bottom: 60px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .link-tree ul {
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    width: 90%;
+  }
+
+  .site-title {
+    font-size: 1.8rem;
+    padding: 0 10px;
+  }
+}

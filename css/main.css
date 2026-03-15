@@ -14,8 +14,6 @@ body {
 }
 
 .mainbody,
-.contactbody,
-.aboutbody,
 .creativebody {
   display: flex;
   flex-direction: column;
@@ -27,12 +25,48 @@ body {
   box-sizing: border-box;
 }
 
-.aboutbody {
-  background: #ededed url("../assets/img/city.jpg") center / cover no-repeat;
+.aboutbody,
+.contactbody {
+  position: relative;
+  background-color: #ededed;
+  min-height: 100vh;
+  z-index: 0;
+  display: flow-root;
 }
 
-.contactbody {
-  background: #ededed url("../assets/img/beach.jpg") center / cover no-repeat;
+.aboutbody::before,
+.contactbody::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  opacity: 0;
+  animation: slowFade 2s ease-out forwards;
+}
+
+.aboutbody::before {
+  background-image: url("../assets/img/city.jpg");
+}
+
+.contactbody::before {
+  background-image: url("../assets/img/beach.jpg");
+}
+
+@keyframes slowFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .creativebody {
